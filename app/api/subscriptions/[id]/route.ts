@@ -1,4 +1,3 @@
-import { captureException } from "@sentry/nextjs";
 import { StatusCodes } from "http-status-codes";
 import { logger } from "lib/server/logger";
 import { prismaClient } from "lib/server/prisma";
