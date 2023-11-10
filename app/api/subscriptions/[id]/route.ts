@@ -115,7 +115,6 @@ export async function DELETE(
       status: StatusCodes.NO_CONTENT,
     });
   } catch (error) {
-    captureException(error);
     logger.error("Failed to delete subscription", { error });
     return new Response("Failed to delete subscription. Please try again.", {
       status: StatusCodes.INTERNAL_SERVER_ERROR,
