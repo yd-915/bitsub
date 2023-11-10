@@ -174,7 +174,7 @@ const periodicZap = inngest.createFunction(
         try {
           if (isError(error)) {
           } else {
-            captureException(new Error(JSON.stringify(error)));
+           
           }
         } catch (error) {
           console.error("Failed to capture error", error);
