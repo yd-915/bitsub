@@ -8,7 +8,6 @@ import { MAX_RETRIES } from "lib/constants";
 import { logger } from "lib/server/logger";
 import { areEmailNotificationsSupported } from "lib/server/areEmailNotificationsSupported";
 import { sendEmail } from "lib/server/sendEmail";
-import { captureException } from "@sentry/nextjs";
 import { isError } from "lib/utils";
 import { add } from "date-fns";
 import ms from "ms";
