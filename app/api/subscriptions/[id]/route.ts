@@ -61,7 +61,6 @@ export async function PUT(
       status: StatusCodes.NO_CONTENT,
     });
   } catch (error) {
-    captureException(error);
     logger.error("Failed to update subscription", { error });
     return new Response("Failed to update subscription. Please try again.", {
       status: StatusCodes.INTERNAL_SERVER_ERROR,
