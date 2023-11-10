@@ -263,7 +263,7 @@ async function createSubscription(
     body: JSON.stringify(createSubscriptionRequest),
   });
   if (!res.ok) {
-    captureException(new Error("Failed to create subscription: " + res.status));
+    (new Error("Failed to create subscription: " + res.status));
     toast.error(res.status + " " + res.statusText);
     return undefined;
   }
