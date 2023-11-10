@@ -69,7 +69,6 @@ export async function POST(request: Request) {
       status: StatusCodes.CREATED,
     });
   } catch (error) {
-    captureException(error);
     logger.error("Failed to create subscription", { error });
     return new Response("Failed to create subscription. Please try again.", {
       status: StatusCodes.INTERNAL_SERVER_ERROR,
