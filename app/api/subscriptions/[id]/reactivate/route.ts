@@ -55,7 +55,6 @@ export async function POST(
       status: StatusCodes.NO_CONTENT,
     });
   } catch (error) {
-    captureException(error);
     logger.error("Failed to reactivate subscription", { error });
     return new Response(
       "Failed to reactivate subscription. Please try again.",
