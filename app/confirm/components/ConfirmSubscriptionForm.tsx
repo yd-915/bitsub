@@ -16,7 +16,7 @@ import { Loading } from "app/components/Loading";
 import { toast } from "react-hot-toast";
 import Image from "next/image";
 import { Modal } from "app/components/Modal";
-import { captureException } from "@sentry/nextjs";
+
 
 type FormData = CreateSubscriptionRequest;
 
